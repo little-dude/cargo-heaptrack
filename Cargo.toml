@@ -1,0 +1,15 @@
+[package]
+name = "cargo-heaptrack"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+keywords = ["heaptrack", "profiling", "cargo", "cargo-subcommand"]
+categories = ["command-line-utilities", "development-tools::profiling", "visualization", "development-tools::cargo-plugins"]
+readme = "README.md"
+description = "cargo subcommand for generating heaptrack flamegraphs"
+repository = "https://github.com/little-dude/cargo-heaptrack"
+
+[dependencies]
+anyhow = "1.0.72"
+cargo_metadata = "0.17.0"
+clap = { version = "4.3.19", features = ["derive"] }
